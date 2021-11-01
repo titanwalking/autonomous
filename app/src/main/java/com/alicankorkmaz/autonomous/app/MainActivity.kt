@@ -1,12 +1,12 @@
-package com.ncorti.kotlin.template.app
+package com.alicankorkmaz.autonomous.app
 
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.ncorti.kotlin.template.app.databinding.ActivityMainBinding
-import com.ncorti.kotlin.template.library.FactorialCalculator
-import com.ncorti.kotlin.template.library.android.NotificationUtil
+import com.alicankorkmaz.autonomous.app.databinding.ActivityMainBinding
+import com.alicankorkmaz.autonomous.library.FactorialCalculator
+import com.alicankorkmaz.autonomous.library.android.NotificationUtil
 
 class MainActivity : AppCompatActivity() {
 

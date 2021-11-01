@@ -1,4 +1,4 @@
-package com.ncorti.kotlin.template.library.android
+package com.alicankorkmaz.autonomous.library.android
 
 import android.app.Notification
 import androidx.test.ext.junit.runners.AndroidJUnit4

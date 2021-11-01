@@ -1,4 +1,4 @@
-package com.ncorti.kotlin.template.library
+package com.alicankorkmaz.autonomous.library
 
 object FactorialCalculator {
 
