@@ -1,12 +1,25 @@
 pipeline {
     agent any
     stages{
-        stage('Build App') {
+
+        stage('main'){
+            when{
+                branch 'main'
+            }
             steps {
-                sh './gradlew clean ktlintFormat'
-                sh './gradlew test'
                 sh './gradlew assembleDebug'
             }
         }
+        
+        stage('PRs'){
+            when{
+                branch 'PR-*'
+            }
+            steps {
+                sh './gradlew clean ktlintFormat'
+                sh './gradlew test'
+            }
+        }
+        
     }
 }
