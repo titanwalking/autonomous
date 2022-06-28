@@ -11,8 +11,8 @@ android {
         targetSdkVersion(Sdk.TARGET_SDK_VERSION)
 
         applicationId = AppCoordinates.APP_ID
-        versionCode = AppCoordinates.APP_VERSION_CODE
-        versionName = AppCoordinates.APP_VERSION_NAME
+        versionCode = System.getenv("BUILD_NUMBER")?.let { Integer.valueOf(it) } ?: 0
+        versionName = "${AppCoordinates.APP_VERSION_CODE_MAJOR}.${AppCoordinates.APP_VERSION_CODE_MINOR}.$versionCode"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     buildFeatures {

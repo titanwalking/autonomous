@@ -19,6 +19,16 @@ pipeline {
                 sh './gradlew clean ktlintFormat'
                 sh './gradlew test'
             }
+            post {
+                success {
+                    sh './gradlew assembleRelease'
+                }
+                failure {
+                    script{
+                        error "Failed, exiting now..."
+                    }
+                }
+            }
         }
         
     }
