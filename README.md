@@ -1,1 +1,1 @@
-auto-merge test
+version bump test
