@@ -1,1 +1,1 @@
-auto-merge test
+example bugfix
