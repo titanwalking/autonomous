@@ -101,7 +101,7 @@ tasks.register("bumpVersionCode") {
             if(code != null){
                 val bumpedCode: Int = code.toInt() + 1
 
-                println("Bumping version code to $bumpedCode")
+                println("Bumping version code from $code to $bumpedCode")
 
                 properties["VERSION_CODE"] = bumpedCode.toString()
                 properties.store(versionFile.writer(), null)
